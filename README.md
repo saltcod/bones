@@ -1,4 +1,4 @@
-# Bones
+# A fork of the amazing Bones WordPress theme
 __A Lightweight Wordpress Development Theme__
 
 Bones is designed to make the life of developers easier. It's built
