@@ -45,6 +45,31 @@ require_once( 'library/custom-post-type.php' ); // you can disable this if you l
 */
 // require_once( 'library/translation/translation.php' ); // this comes turned off by default
 
+
+
+/************* Custom functions *************/
+
+
+/**
+ * Print out the current template file to the footer. 
+ * Obviously to be removed in production
+ *
+ * @since 0.1
+ */
+function waterstreet_show_template() {
+	if ( is_super_admin() ){	
+		global $template;
+		echo '<div class=template-file>Template file:</div>';
+		print_r($template);
+	}
+}
+add_action('wp_footer', 'waterstreet_show_template', 1);
+
+
+
+
+
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
